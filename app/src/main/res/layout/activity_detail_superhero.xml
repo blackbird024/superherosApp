@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSuperheroActivity">
+
+    <ImageView
+        android:id="@+id/ivSuperhero"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="220dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="#2196F3"
+        app:cardCornerRadius="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSuperheroName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="name"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewIntelligence"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#3F51B5" />
+
+                <View
+                    android:id="@+id/viewStrength"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#9C27B0" />
+
+                <View
+                    android:id="@+id/viewSpeed"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#F44336" />
+
+                <View
+                    android:id="@+id/viewDurability"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#FF9800" />
+
+                <View
+                    android:id="@+id/viewPower"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFEB3B" />
+
+                <View
+                    android:id="@+id/viewCombat"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:background="#4CAF50" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:text="Intelligence"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:text="Strength"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:text="Speed"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:text="Durability"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:text="Power"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:text="Combat"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
